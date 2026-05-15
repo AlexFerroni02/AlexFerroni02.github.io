@@ -170,7 +170,7 @@ function ProjectCarousel({ title, projects }: { title: string, projects: Project
                 className={`glass-card p-6 flex flex-col gap-3 relative overflow-hidden group w-full md:w-[calc(33.333%-1rem)] snap-start shrink-0 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:z-10 rounded-3xl border border-slate-800/60 min-h-[260px] ${colors.hoverBorder} ${colors.hoverShadow}`}
               >
                 {p.link && (
-                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10"></a>
+                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-30"></a>
                 )}
                 <div className={`absolute top-0 right-0 w-24 h-24 blur-[30px] rounded-full transition-all duration-700 ${colors.bgGlow}`}></div>
                 <div className="flex items-start justify-between relative z-20">
