@@ -165,13 +165,11 @@ function ProjectCarousel({ title, projects }: { title: string, projects: Project
               <motion.div 
                 key={p.id}
                 variants={fadeInUp} 
+                onClick={() => p.link && window.open(p.link, "_blank", "noopener,noreferrer")}
                 // Exactly 1/3 of the container width minus the gap logic, making 3 cards fit perfectly on md+
                 // Add rounded-3xl for a less square look, and hover:-translate-y-2 for a floating effect
-                className={`glass-card p-6 flex flex-col gap-3 relative overflow-hidden group w-full md:w-[calc(33.333%-1rem)] snap-start shrink-0 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:z-10 rounded-3xl border border-slate-800/60 min-h-[260px] ${colors.hoverBorder} ${colors.hoverShadow}`}
+                className={`glass-card p-6 flex flex-col gap-3 relative overflow-hidden group w-full md:w-[calc(33.333%-1rem)] snap-start shrink-0 transition-all duration-300 hover:-translate-y-2 hover:z-10 rounded-3xl border border-slate-800/60 min-h-[260px] ${colors.hoverBorder} ${colors.hoverShadow} ${p.link ? "cursor-pointer" : ""}`}
               >
-                {p.link && (
-                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-30"></a>
-                )}
                 <div className={`absolute top-0 right-0 w-24 h-24 blur-[30px] rounded-full transition-all duration-700 ${colors.bgGlow}`}></div>
                 <div className="flex items-start justify-between relative z-20">
                   <div className={`p-2 bg-slate-800/50 rounded-xl ${colors.textIcon}`}>
