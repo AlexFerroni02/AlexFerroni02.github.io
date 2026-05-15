@@ -235,11 +235,11 @@ export default function Home() {
             Passionate about Computer Vision, Artificial Intelligence, and Software Engineering. 
             Currently seeking my first full-time role, I love building, training, and optimizing Deep Learning models, as well as developing robust software architectures and distributed systems.
           </motion.p>
-          <motion.div variants={fadeInUp} className="flex gap-4 mt-6">
-            <a href="mailto:alexferroni02@gmail.com" className="bg-white text-slate-950 px-8 py-3 rounded-full font-bold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)] flex items-center gap-2">
+          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:w-auto">
+            <a href="mailto:alexferroni02@gmail.com" className="bg-white text-slate-950 px-8 py-3 rounded-full font-bold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)] flex items-center justify-center gap-2 w-full sm:w-auto">
               <Mail size={18} /> alexferroni02@gmail.com
             </a>
-            <a href="https://github.com/AlexFerroni02" target="_blank" rel="noopener noreferrer" className="bg-slate-900 border border-slate-700 text-white px-8 py-3 rounded-full font-bold hover:bg-slate-800 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+            <a href="https://github.com/AlexFerroni02" target="_blank" rel="noopener noreferrer" className="bg-slate-900 border border-slate-700 text-white px-8 py-3 rounded-full font-bold hover:bg-slate-800 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto">
               <Globe size={18} /> GitHub Profile
             </a>
           </motion.div>
