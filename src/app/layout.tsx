@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Ferroni | AI & Deployment Engineer",
-  description: "Portfolio of Alex Ferroni, AI & Deployment Engineer specialized in Deep Learning and Computer Vision.",
+  title: "Alex Ferroni | Software & AI Engineer",
+  description: "Portfolio of Alex Ferroni, Software & AI Engineer specialized in Deep Learning, Computer Vision, and Web Architectures.",
 };
 
 export default function RootLayout({
