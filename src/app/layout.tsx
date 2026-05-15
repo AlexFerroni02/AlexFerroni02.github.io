@@ -8,6 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alexferroni02.github.io"),
   title: "Alex Ferroni | Software & AI Engineer",
   description: "Portfolio of Alex Ferroni, Software & AI Engineer specialized in Deep Learning, Computer Vision, and Web Architectures.",
 };
